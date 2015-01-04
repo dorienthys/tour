@@ -1,4 +1,4 @@
 weAreIMD - Interactive Tour
 ====
 
-Interactive Tour - [a link](http://tour.weareimd.be/)
+Interactive Tour - [tour.wearimd.be](http://tour.weareimd.be/)
