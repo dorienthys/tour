@@ -1,3 +1,7 @@
+html,body {
+	overflow: hidden;
+}
+
 body {
     font-family:'helvetica neue', helvetica, sans-serif;
     font-weight: lighter;
@@ -48,10 +52,10 @@ body {
 }
 
 .intro-tekst p:last-child{
-	margin-bottom: 40px;
+	padding-bottom: 40px;
 }
 
-a{
+a {
 	display: block;
 	width:100%;
 	margin-top: 15px;
@@ -126,11 +130,8 @@ footer img {
 		font-size: 80px;
 	}
 
-	.intro-tekst p:last-child{
-		margin-bottom: 150px;
-	}
-
 	#intro p {
 		font-size: 20px;
+		line-height: 25px;
 	}
 }
