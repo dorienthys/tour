@@ -1,0 +1,225 @@
+html,body {
+	overflow: hidden;
+}
+
+body {
+    font-family:'helvetica neue', helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.wrapper {
+	padding: 0 15px;
+}
+
+.page-content {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.page {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.page-1 {
+	background: url('../assets/DSC_7221-1-min.jpg') no-repeat center center;
+}
+
+.page-2 {
+	background: url('../assets/DSC_7222-2-min.jpg') no-repeat center center;
+}
+
+.page-2_1 {
+	background: url('../assets/DSC_7223-3-min.jpg') no-repeat center center;
+}
+
+.page-2_1_1 {
+	background: url('../assets/DSC_7229-8-min.jpg') no-repeat center center;
+}
+
+
+.page-2_2 {
+	background: url('../assets/DSC_7225-4-min.jpg') no-repeat center center;
+}
+
+.page-2_2_1 {
+	background: url('../assets/DSC_6793-min.jpg') no-repeat center center;
+}
+
+.page-3 {
+	background: url('../assets/DSC_7226-5-min.jpg') no-repeat center center;
+}
+
+.page-4 {
+	background: url('../assets/DSC_6752-min.jpg') no-repeat center center;
+}
+
+
+.fadeInBot {
+	-webkit-animation: fadeInBot .3s ease; 
+    animation: fadeInBot .3s ease; 
+    -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInBot {
+	0% {transform:translateY(100vh); opacity: 0;}
+	100% {transform:translateY(0vh); opacity: 1;}
+}
+
+@keyframes fadeInBot {
+	0% {transform:translateY(100vh); opacity: 0;}
+	100% {transform:translateY(0px); opacity: 1;}
+}
+
+.fadeInTop {
+	-webkit-animation: fadeInTop .3s ease; 
+    animation: fadeInTop .3s ease; 
+    -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInTop {
+	0% {transform:translateY(-100vh); opacity: 0;}
+	100% {transform:translateY(0vh); opacity: 1;}
+}
+
+@keyframes fadeInTop {
+	0% {transform:translateY(-100vh); opacity: 0;}
+	100% {transform:translateY(0px); opacity: 1;}
+}
+
+.fadeInLeft {
+	-webkit-animation: fadeInLeft .3s ease; 
+    animation: fadeInLeft .3s ease; 
+    -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInLeft {
+	0% {transform:translateX(-100vh); opacity: 0;}
+	100% {transform:translateX(0vh); opacity: 1;}
+}
+
+@keyframes fadeInLeft {
+	0% {transform:translateX(-100vh); opacity: 0;}
+	100% {transform:translateX(0px); opacity: 1;}
+}
+
+.fadeInRight {
+	-webkit-animation: fadeInRight .3s ease; 
+    animation: fadeInRight .3s ease; 
+    -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInRight {
+	0% {transform:translateX(100vh); opacity: 0;}
+	100% {transform:translateX(0vh); opacity: 1;}
+}
+
+@keyframes fadeInRight {
+	0% {transform:translateX(100vh); opacity: 0;}
+	100% {transform:translateX(0px); opacity: 1;}
+}
+
+.page h1{
+	color: #14abb9;
+	font-size: 65px;
+	font-family: 'Dancing Script';
+	font-weight: lighter;
+	padding: 20px 0 30px;
+}
+
+.rechts a{
+	width: 0; 
+	height: 0; 
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	border-left: 25px solid #14abb9;
+	margin: 0;
+
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	right: 10px;
+}
+
+.links a{
+	width: 0; 
+	height: 0; 
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	border-right: 25px solid #14abb9;
+	margin: 0;
+
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	left: 10px;
+}
+
+.onder a{
+	width: 0; 
+	height: 0; 
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 25px solid #14abb9;
+	margin: 0;
+
+	position: absolute;
+	left: 50%;
+	transform:translateX(-50%);
+	bottom: 10px;
+}
+
+.boven a{
+	width: 0; 
+	height: 0; 
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid #14abb9;
+	margin: 0;
+
+	position: absolute;
+	left: 50%;
+	transform:translateX(-50%);
+	top: 10px;
+}
+
+@media (min-width: 960px) {
+	.wrapper {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	.page p {
+		font-size: 20px;
+		line-height: 25px;
+	}
+}

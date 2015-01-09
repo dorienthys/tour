@@ -120,10 +120,11 @@ body {
 
 a {
 	display: block;
-	width:100%;
+	margin: 0 auto;
 	margin-top: 15px;
 	font-size: 12px;
 	color:#5c7782;
+	width: 90px;
 }
 
 a.btn{
@@ -140,20 +141,6 @@ a.btn{
 
 .intro-link {
 	opacity: 0;
-}
-
-.arrow-right a{
-	width: 0; 
-	height: 0; 
-	border-top: 25px solid transparent;
-	border-bottom: 25px solid transparent;
-	border-left: 25px solid #14abb9;
-	margin: 0;
-
-	position: absolute;
-	top: 50%;
-	transform:translateY(-50%);
-	right: 30px;
 }
 
 footer {
