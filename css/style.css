@@ -43,12 +43,75 @@ body {
 	font-family: 'Dancing Script';
 	padding: 20px 0;
 	font-weight: lighter;
+	opacity: 0;
 }
 
 #intro p{
 	color:#5c7782;
 	font-size: 17px;
 	line-height: 22px;
+}
+
+.intro-para {
+	opacity: 0;
+}
+
+.slideLeft {
+	-webkit-animation: slideLeft 1.5s ease; 
+    animation: slideLeft 1.5s ease; 
+    -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 0.5s; 
+    animation-delay: 0.5s;
+
+}
+
+.slideRight {
+	-webkit-animation: slideRight 1.5s ease; 
+    animation: slideRight 1.5s ease; 
+    -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 0.5s; 
+    animation-delay: 0.5s;
+}
+
+.slideDown {
+	-webkit-animation: slideDown 1.5s ease; 
+    animation: slideDown 1.5s ease; 
+    -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 2s; 
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slideLeft {
+	0% {transform: translateX(-150px); opacity: 0;}
+	100% {transform: translateX(0px); opacity: 1;}
+}
+
+@keyframes slideLeft {
+	0% {transform: translateX(-150px); opacity: 0;}
+	100% {transform: translateX(0px); opacity: 1;}
+}
+
+@-webkit-keyframes slideRight {
+	0% {transform: translateX(150px); opacity: 0;}
+	100% {transform: translateX(0px); opacity: 1;}
+}
+
+@keyframes slideRight {
+	0% {transform: translateX(150px); opacity: 0;}
+	100% {transform: translateX(0px); opacity: 1;}
+}
+
+@-webkit-keyframes slideDown {
+	0% {transform: translateY(-80px); opacity: 0;}
+	100% {transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes slideDown {
+	0% {transform: translateY(-80px); opacity: 0;}
+	100% {transform: translateY(0px); opacity: 1;}
 }
 
 .intro-tekst p:last-child{
@@ -75,6 +138,23 @@ a.btn{
 	font-size: 18px;
 }
 
+.intro-link {
+	opacity: 0;
+}
+
+.arrow-right a{
+	width: 0; 
+	height: 0; 
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	border-left: 25px solid #14abb9;
+	margin: 0;
+
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	right: 30px;
+}
 
 footer {
 	background-color: #fff;
