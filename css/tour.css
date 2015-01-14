@@ -114,18 +114,18 @@ nav a {
 }
 
 .roundslide a {
-	margin: 0 20px;
+	margin: 20px;
 	padding: 15px;
 	width: 62px;
 	height: 62px;
 	border-radius: 40px;
-	background-color: rgba(255, 255, 255, 0.85);
+	background-color: rgba(255, 255, 255, 0.5);
 	-webkit-transition: width .3s, background-color .3s;
 	transition: width .3s, background-color .3s;
 	overflow: hidden;
 }
 
-.roundslide h1 {
+.roundslide h1, .roundslide h2 {
 	position: absolute;
 	top:0;
 	margin: 0;
@@ -138,6 +138,11 @@ nav a {
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
 	opacity: 0;
+}
+
+.roundslide h2{
+	font-size: 15px;
+	margin-top:5px;
 }
 
 /*POSITIONERING*/
@@ -165,6 +170,14 @@ nav a {
 .right {
 	right:0;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.roundslide .middle {
+	position:static;
+	margin-left:auto;
+	margin-right:auto;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
@@ -249,6 +262,14 @@ nav a {
 	left: 55px;
 }
 
+.roundslide a.middle h2 {
+	right: 25%;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+
+
 .roundslide a:hover {
 	width: 200px;
 	background-color: rgba(20, 171, 185, 0.85);
@@ -263,7 +284,7 @@ nav a {
 	border-bottom: 16px solid #14abb9;
 	margin: 0;
 	position: absolute;
-	top: 10px;
+	top: 20px;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
@@ -276,7 +297,7 @@ nav a {
 	border-top: 16px solid #14abb9;
 	margin: 0;
 	position: absolute;
-	bottom: 10px;
+	bottom: 20px;
 	right:15px;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
@@ -290,7 +311,7 @@ nav a {
 	border-right: 16px solid #14abb9;
 	margin: 0;
 	position: absolute;
-	left: 10px;
+	left: 20px;
 }
 
 .rechts {
@@ -301,8 +322,9 @@ nav a {
 	border-left: 16px solid #14abb9;
 	margin: 0;
 	position: absolute;
-	right: 10px;
+	right: 20px;
 }
+
 
 /*ANIMATIONS*/
 .roundslide a:hover .boven {
@@ -328,6 +350,13 @@ nav a {
 }
 
 .roundslide a:hover h1 {
+	opacity: 1;
+	color: #fff;
+	transition-delay:0.2s;
+	transform: translate(0);
+}
+
+.roundslide a:hover h2 {
 	opacity: 1;
 	color: #fff;
 	transition-delay:0.2s;

@@ -127,6 +127,10 @@ a {
 	width: 90px;
 }
 
+a.link{
+	margin-top: -30px;
+}
+
 a.btn{
 	text-decoration: none;
 	border-radius: 5px;
@@ -145,7 +149,7 @@ a.btn{
 
 footer {
 	background-color: #fff;
-
+	margin-bottom: 15px;
 }
 
 footer img {
@@ -173,7 +177,7 @@ footer img {
 	}
 
 	.intro-tekst p:last-child{
-		margin-bottom: 70px;
+		margin-bottom: 20px;
 	}
 
 	footer {
