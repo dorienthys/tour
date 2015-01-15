@@ -204,7 +204,7 @@ input:focus{
 
 	.tm {
 		float: right;
-		margin: 45px;
+		margin: 45px auto;
 	}
 
 	.modal-content {
