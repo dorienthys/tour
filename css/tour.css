@@ -119,7 +119,7 @@ nav a {
 	width: 62px;
 	height: 62px;
 	border-radius: 40px;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.8);
 	-webkit-transition: width .3s, background-color .3s;
 	transition: width .3s, background-color .3s;
 	overflow: hidden;
@@ -134,13 +134,13 @@ nav a {
 	white-space: nowrap;
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 3.2;
+	line-height: 3.1;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
 	opacity: 0;
 }
 
-.roundslide h2{
+roundslide h2{
 	font-size: 15px;
 	margin-top:5px;
 }
@@ -263,12 +263,10 @@ nav a {
 }
 
 .roundslide a.middle h2 {
-	right: 25%;
+	right: 29%;
 	-webkit-transform: translateY(-100%);
 	transform: translateY(-100%);
 }
-
-
 
 .roundslide a:hover {
 	width: 200px;
