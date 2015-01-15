@@ -62,4 +62,18 @@
  			}
 	 	}
  	});
+
+ 	$('.subscribe').on('click', function(e) {
+		e.preventDefault();
+
+		$('.modal-container.modal-effect-1').addClass('modal-show');
+
+		$('.modal-close').on("click", function(){
+			$('.modal-container.modal-effect-1').removeClass('modal-show');
+		});
+
+		$('.modal-overlay').on("click", function(){
+			$('.modal-container.modal-effect-1').removeClass('modal-show');
+		});
+	});
  });

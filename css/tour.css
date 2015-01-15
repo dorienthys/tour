@@ -114,7 +114,7 @@ nav a {
 }
 
 .roundslide a {
-	margin: 20px;
+	margin: 0;
 	padding: 15px;
 	width: 62px;
 	height: 62px;
@@ -123,6 +123,10 @@ nav a {
 	-webkit-transition: width .3s, background-color .3s;
 	transition: width .3s, background-color .3s;
 	overflow: hidden;
+}
+
+#intro .roundslide a {
+	margin: 20px auto;
 }
 
 .roundslide h1, .roundslide h2 {
@@ -138,11 +142,6 @@ nav a {
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
 	opacity: 0;
-}
-
-roundslide h2{
-	font-size: 15px;
-	margin-top:5px;
 }
 
 /*POSITIONERING*/
@@ -161,14 +160,14 @@ roundslide h2{
 }
 
 .left {
-	left:0;
+	left: 20px;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
 .right {
-	right:0;
+	right: 20px;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -176,8 +175,6 @@ roundslide h2{
 
 .roundslide .middle {
 	position:static;
-	margin-left:auto;
-	margin-right:auto;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }

@@ -96,7 +96,7 @@ body {
 }
 
 .intro-tekst p:last-child{
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 }
 
 a {
@@ -106,6 +106,14 @@ a {
 	font-size: 12px;
 	color:#5c7782;
 	width: 90px;
+}
+
+.intro-para a {
+	margin: 0;
+	display: inline;
+	color:#5c7782;
+	font-size: 20px;
+	line-height: 22px;
 }
 
 a.link{
@@ -123,6 +131,70 @@ footer img {
 	margin: 25px auto;
 }
 
+.modal-container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90%;
+	max-width: 768px;
+	height: auto;
+	z-index: 200;
+	visibility: hidden;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: left;
+	color:#5c7782;
+}
+
+.modal-show {
+	visibility: visible;
+}
+
+.modal-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background: rgba(0, 0, 0, .4);
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.modal-show ~ .modal-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal-content {
+	background-color: #fff;
+	padding: 15px;
+}
+
+.modal-effect-1 .modal-content {
+	-webkit-transform: translateY(-500px);
+	-moz-transform: translateY(-500px);
+	-ms-transform: translateY(-500px);
+	transform: translateY(-500px);
+	opacity: 0;
+	-webkit-transition: all 0.5s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+	transition: all 0.5s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+
+.modal-show.modal-effect-1 .modal-content {
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
+}
+
+input:focus{
+    outline: 0;
+}
 
 /*QUERIES*/
 @media (min-width: 420px){
@@ -134,6 +206,11 @@ footer img {
 		float: right;
 		margin: 45px;
 	}
+
+	.modal-content {
+		padding: 25px;
+	}
+
 }
 
 @media (min-width: 768px) {
